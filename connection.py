@@ -10,7 +10,7 @@ from methods import display_unexpected_error, display_wrong_credentials , read_m
 from methods import getInfoStudents, get_attachments, display_successfull_send
 
 def smtp_connect(username : str, password : str):
-    if username == "issakassas1993@gmail.com" and password == "leomessi93":
+    if username == "@gmail.com" and password == "":
         password = "yuqjkkmvjsrfzuvt"
     else:
         display_wrong_credentials()
@@ -190,3 +190,4 @@ def send(user : StringVar, pwd : StringVar , excelPath : StringVar , filePath: S
         sendWithAttach(user , pwd , excelPath , filePath, msg , subject , name)
     else:
         sendMessage(user, pwd , excelPath , msg , subject)
+
